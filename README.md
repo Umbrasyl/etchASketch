@@ -1,1 +1,2 @@
 # etchASketch
+Odin Project Fundamentals
