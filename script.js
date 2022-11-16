@@ -80,6 +80,7 @@ rainbowButton.addEventListener("click", () => {
     rainbow = true;
 });
 eraserButton.addEventListener("click", () => {
+    rainbow = false;
     penColor = "white";
 });
 clearButton.addEventListener("click", clearCanvas);
