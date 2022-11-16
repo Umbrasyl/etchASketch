@@ -1,12 +1,13 @@
 * {
     box-sizing: border-box;
+    margin: 0;
 }
 
 body {
-    margin: 0;
     padding: 20px;
+    padding-top: 60px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
 }
 
@@ -15,15 +16,21 @@ button {
     background-color: rgb(188, 227, 227);
     border: none;
     border-radius: 15px;
-    color: rgb(161, 134, 134);
+    color: rgb(92, 77, 77);
     text-decoration: none;
     font-family: sans-serif;
-    margin: 30px;
+    margin: 10px;
     padding: 16px;
+    cursor: pointer;
+    width: 200px;
 }
 
 .button-div {
     background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 60px;
 }
 
 .container {
@@ -32,14 +39,55 @@ button {
     flex-wrap: wrap;
     align-content: center;
     justify-content: center;
-    width: 900px;
-    height: 900px;
+    width: 600px;
+    height: 600px;
+    border: 1px solid black;
+    box-shadow: 8px 8px 4px #888888;
+    margin-left: 120px;
+    padding: 0;
 }
 
 div {
-    background-color: red;
+    background-color: white;
 }
 
-.hover {
-    background-color: bisque;
+#style1 {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 70px;
+    height: 70px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#style1::-webkit-color-swatch {
+    border-radius: 15px;
+    border: none;
+}
+
+#style1::-moz-color-swatch {
+    border-radius: 15px;
+    border: none;
+}
+
+.rainbow {
+    animation: rainbow 20s linear infinite;
+    background-color: yellow;
+}
+
+@keyframes rainbow {
+    0%, to {
+        background:violet
+    }
+    25% {
+        background:orange
+    }
+    50% {
+        background:#ff0
+    }
+    75% {
+        background:#00f
+    }
 }
